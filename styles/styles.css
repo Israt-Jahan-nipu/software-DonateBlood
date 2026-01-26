@@ -62,30 +62,6 @@ nav .nav li:hover a {
     color: #cc1a1a;
 }
 
-footer{
-    background-color: #363636;
-    text-align: center;
-    padding: 20px;
-    color: white;
-}
-footer h2{
-    font-size: 32px;
-    padding: 5px;
-}
-footer p{
-    font-size: 18px;
-}
-footer .socials{
-    display: flex;
-    margin-left: 46.5%;
-    gap: 20px;
-    margin-top: 10px;
-}
-footer .socials .icons{
-    color: white;
-}
-
-
 
 /* main style */
 .create-post {
@@ -136,21 +112,44 @@ footer .socials .icons{
 }
 
 
-/* Banner layout (basic example) */
+/* Banner layout*/
 .banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
     height: 600px;
     padding: 80px 10%;
-    /* Red gradient overlay on top of image */
-    background-image: 
-        linear-gradient(rgba(129, 4, 4, 0), rgba(136, 13, 13, 0.275)), 
-        url(../images/blood6.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: contain;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: flex-end;   /*Changed the alignment*/
+    align-items: center;
 }
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(129, 4, 4, 0.55),
+        rgba(136, 13, 13, 0.55)
+    );
+    z-index: 2;
+}
+
+.banner .slogan {
+    position: relative;
+    z-index: 3;
+}
+
 
 
 /* Slogan animation */
@@ -233,3 +232,51 @@ footer .socials .icons{
     transform: translateY(-3px);
 }
 
+/* Footer section */
+.footer {
+    background-color: #cc1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    /* border: 1px solid white; */
+    height: 350px;
+}
+
+
+.footer-box h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    /* border: 1px solid white; */
+}
+
+.footer-box h1{
+    font-size: 28px;
+    margin-top: 30px;
+    font-style:italic;
+}
+
+.footer-box img{
+    padding-top: 0;
+    width: 45%;
+    border: 1px solid white;
+}
+
+.footer-box a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer .socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.footer .socials i {
+    font-size: 22px;
+    color: white;
+}

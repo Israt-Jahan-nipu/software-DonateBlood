@@ -23,18 +23,26 @@
         </ul>
     </nav>
 
-    <div class="banner">
-        <div class="slogan">
-            <h2>Donate Blood, <br>Save Life</h2>
-            <div class="buttons">
-                <a href="">Find Doner</a>
-                <a href="">Donate Blood</a>
-            </div>
-        </div>
-        <div class="animation">
-            <i class="fa-solid fa-hand-holding-droplet"></i>
+<div class="banner">
+    <!-- Background video -->
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="videos/blood-donation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Optional overlay -->
+    <div class="video-overlay"></div>
+
+    <!-- Existing content -->
+    <div class="slogan">
+        <h2>Donate Blood, <br>Save Life</h2>
+        <div class="buttons">
+            <a href="">Find Doner</a>
+            <a href="">Donate Blood</a>
         </div>
     </div>
+</div>
+
 </header>
     <!-- <section class="emergency">
         <div class="create-post">
@@ -77,15 +85,30 @@
     <a href="blood-chart.html"><img src="images/blood-chart.png" alt=""></a>
 </section>
 
-    <footer>
-        <h2>Contact Us</h2>
-        <p>Phone No: 01234567891</p>
+<footer class="footer">
+    <div class="footer-box">
+        <img src="images/footer-logo-removebg-preview.png" alt="">
+        <h1>Donate Blood, Save Life</h1>
+    </div>
+
+    <div class="footer-box">
+        <h3>Important Links</h3>
+        <a href="#">Home</a>
+        <a href="#">Register</a>
+        <a href="#">Find Donor</a>
+        <a href="#">About Us</a>
+    </div>
+
+    <div class="footer-box">
+        <h3>Contact & Socials</h3>
+        <p>Phone: 01234567891</p>
         <p>Email: donatelife@gmail.com</p>
         <div class="socials">
-            <a class="icons" href=""><i class="fa-brands fa-facebook"></i></a>
-            <a class="icons"><i class="fa-brands fa-instagram"></i></a>
-            <a class="icons" href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>
