@@ -1,0 +1,57 @@
+/* shared style */
+.logo h1{
+    font-size: 45px;
+    color: white;
+    text-shadow: -1px -1px 3px #363636;
+    background-color: #dfdfdf8a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.color_red
+{
+    color: #cc1a1a;
+    font-weight: 900;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    /* border: 1px solid red; */
+    background-color: #cc1a1a;
+}
+
+nav .nav{
+    display: flex;
+    list-style-type: none;
+    gap: 51px;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+nav .nav a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+nav .nav li{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+nav .nav li:hover{
+    color: #cc1a1a;
+    background-color: #ffffffec;
+    /* border: 1px solid rgb(255, 255, 255); */
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+nav .nav li:hover a {
+    color: #cc1a1a;
+}
