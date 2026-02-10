@@ -1,6 +1,7 @@
 /* shared style */
 .logo img{
     border: 1px solid white;
+    width: 100%;
 }
 
 .color_red
