@@ -5,9 +5,20 @@
     display: flex;
     justify-content: space-around;
     padding: 60px;
-    
-    height: 350px;
+    flex-wrap: wrap; /* important */
+    height: auto;    /* remove fixed height */
 }
+
+/* Copyright section */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    padding-top: 20px;
+    font-size: 14px;
+}
+
 
 
 .footer-box h3 {
